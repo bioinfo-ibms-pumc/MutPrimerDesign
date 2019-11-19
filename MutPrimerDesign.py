@@ -169,6 +169,8 @@ class PrimerDesign(object):
                 'PRIMER_MIN_GC': int(args.primer_min_gc),
                 'PRIMER_MAX_GC': int(args.primer_max_gc),
                 'PRIMER_MAX_POLY_X': int(args.primer_max_poly_num),
+                'PRIMER_INTERNAL_OPT_TM':int(args.primer_opt_tm) + 5,
+                'PRIMER_INTERNAL_MAX_TM':int(args.primer_max_tm) + 5,
                 'PRIMER_SALT_MONOVALENT': 50.0,
                 'PRIMER_DNA_CONC': 50.0,
                 'PRIMER_MAX_NS_ACCEPTED': 0,
