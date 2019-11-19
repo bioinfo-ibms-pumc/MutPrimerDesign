@@ -1,4 +1,4 @@
-# MutPrimerDesign: Primer design for Human mutations
+# MutPrimerDesign: Primer design for human mutations
 
 MutPrimerDesign is maintained by Yinghao Cao [yhcao@ibms.pumc.edu.cn].
 ## Download and Installation
