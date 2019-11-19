@@ -1,0 +1,3 @@
+#VariationID             #LeftPrimer                                     #RightPrimer                          #InternalOligo
+TP53:345:2_0             TGAAGCTCCCAGAATGCCAG                    GACAGGAAGCCAAAGGGTGA              GGGCTTCTTGCATTCTGGGACAGCCA
+TP53:345:2_1             TGAAGCTCCCAGAATGCCAG                    CTGACAGGAAGCCAAAGGGT              GGGCTTCTTGCATTCTGGGACAGCCA
