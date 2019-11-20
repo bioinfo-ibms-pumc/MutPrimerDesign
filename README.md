@@ -4,6 +4,14 @@ MutPrimerDesign is maintained by Yinghao Cao [yhcao@ibms.pumc.edu.cn].
 ## Download and Installation
 ```
 git clone https://github.com/bioinfo-ibms-pumc/MutPrimerDesign.git
+
+Human genome file:
+wget -c ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.fna.gz
+gunzip -c GCF_000001405.39_GRCh38.p13_genomic.fna.gz > genome.fa
+Human gene annotation file:
+wget -c ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.gff.gz
+gunzip -c GCF_000001405.39_GRCh38.p13_genomic.gff.gz > gene.gff
+
 ```
 ## Command Lines
 
