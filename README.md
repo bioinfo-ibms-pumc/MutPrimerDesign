@@ -69,15 +69,26 @@ optional arguments:
 ```
 ## Examples
 ```
-1. Design 5 primers for 2 bases of mutation in gene TP53, with which located in 345 base pair in the cds sequence.
-python3 MutPrimerDesign.py -g genome.fa -G gene.gff -k namedb -o temp.fa -i "TP53:345:2" --primerNum 5
-python3 MutPrimerDesign.py -g genome.fa -G gene.gff -k namedb -o temp.fa -i "ENSG00000141510:345:2" --primerNum 5 -s ensembl_id
-python3 MutPrimerDesign.py -g genome.fa -G gene.gff -k namedb -o temp.fa -i "11998:345:2" --primerNum 5 -s hgnc_id
+1. Design 5 primers for 2 bases of mutation in gene TP53, with which 
+                        located in 345 base pair in the cds sequence.
+  python3 MutPrimerDesign.py -g genome.fa -G gene.gff -k namedb -o temp.fa \
+                        -i "TP53:345:2" --primerNum 5
+  python3 MutPrimerDesign.py -g genome.fa -G gene.gff -k namedb -o temp.fa \
+                        -i "ENSG00000141510:345:2" --primerNum 5 -s ensembl_id
+  python3 MutPrimerDesign.py -g genome.fa -G gene.gff -k namedb -o temp.fa \
+                        -i "11998:345:2" --primerNum 5 -s hgnc_id
+                        
 2. Design primers for amplicons of three genes, including TPP1, CLN6 and WAS.
-python3 MutPrimerDesign.py -g genome.fa -G gene.gff -k namedb -o temp.fa -i "TPP1:1417:1,CLN6:794:4,WAS:223:5"
+  python3 MutPrimerDesign.py -g genome.fa -G gene.gff -k namedb -o temp.fa \
+                        -i "TPP1:1417:1,CLN6:794:4,WAS:223:5"
+                        
 3. Design primers for amplicons of genes from file.
-python3 MutPrimerDesign.py -g genome.fa -G gene.gff -k namedb -o temp.fa -f "samples.file"
-4. Redesign primers for amplicons of genes which saved in temp.fa file, ignoring sequence extraction, with modified minimum acceptable melting temperature 50C.
-python3 MutPrimerDesign.py -g genome.fa -G gene.gff -k namedb -o temp.fa -p --primer_min_tm 50
+  python3 MutPrimerDesign.py -g genome.fa -G gene.gff -k namedb -o temp.fa \
+                        -f "samples.file"
+4. Redesign primers for amplicons of genes which saved in temp.fa file, 
+                        ignoring sequence extraction, with modified 
+                        minimum acceptable melting temperature 50C.
+  python3 MutPrimerDesign.py -g genome.fa -G gene.gff -k namedb -o temp.fa \
+                        -p --primer_min_tm 50
 
 ```
