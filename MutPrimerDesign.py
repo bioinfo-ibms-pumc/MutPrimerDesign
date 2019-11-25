@@ -18,7 +18,7 @@ import primer3
 import collections
 
 import gzip
-import pandas as pd
+#import pandas as pd
 from pickle import dump,load
 
 class VariationLoc(object):
