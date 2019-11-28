@@ -1,0 +1,11 @@
+Amplicon0_0:
+ BRAF:1799:1|BRAF|NM_004333.6|NC_000007.14|140753136_140753536|center:140753336|1799|Refbase:T|1 0
+ amplicon length: 236
+ primer informations:
+        primer pair: AnyTH:1.299091594196625|EndTH:1.1530253069911396
+     left primer(>): TGCTTGCTCTGATAGGAAAATGA|Loc:86|Len:23|TM:58.15|GC:39.13|AnyTH:0.0|EndTH:0.0|HairpinTH:34.81|Stability:2.57
+    right primer(<): AACTCAGCAGCATCTCAGGG|Loc:321|Len:20|TM:59.75|GC:55.0|AnyTH:0.0|EndTH:0.0|HairpinTH:0.0|Stability:4.45
+  internal oligo(|): AGTGAAATCTCGATGGAGTGGG|Loc:198|Len:22|TM:53.92|GC:50.0|AnyTH:0.8|EndTH:0.0|HairpinTH:38.12
+TAAGAGGAAAGATGAAGTACtatgttttaaagaatattatattACAGAATTATAGAAATTAGATCTCTTACCTAAACTCTTCATAATGCTTGCTCTGATAGGAAAATGAGATCTACTGTTTTCCTTTACTTACTACACCTCAGATATATTTCTTCATGAAGACCTCACAGTAAAAATAGGTGATTTTGGTCTAGCTACAGTGAAATCTCGATGGAGTGGGTCCCATCAGTTTGAACAGTTGTCTGGATCCATTTTGTGGATGGTAAGAATTGAGGCTATTTTTCCACTGATTAAATTTTTGGCCCTGAGATGCTGCTGAGTTACTAGAAAGTCATTGAAGGTCTCAACTATAGTATTTTCATAGTTCCCAGTATTCACAAAAAtcagtgttcttatttttt
+......................................................................................>>>>>>>>>>>>>>>>>>>>>>>-----------------------------------------------------------------------------------------||*|||||||||||||||||||---------------------------------------------------------------------------------<<<<<<<<<<<<<<<<<<<<...............................................................................
+

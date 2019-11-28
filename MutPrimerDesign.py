@@ -18,7 +18,7 @@ import primer3
 import collections
 
 import gzip
-#import pandas as pd
+import pandas as pd
 from pickle import dump,load
 
 class VariationLoc(object):
@@ -150,6 +150,7 @@ class PrimerDesign(object):
                 #'SEQUENCE_EXCLUDED_REGION': [0, 0],
                 'SEQUENCE_INCLUDED_REGION': [int(int(args.maxLength)/2)-200, int(int(args.maxLength)/2) + 200],
                 'SEQUENCE_TARGET': [int(int(args.maxLength)/2)-80, 150],
+                'SEQUENCE_INTERNAL_EXCLUDED_REGION' :[[0,int(int(args.maxLength)/2)-20],[int(int(args.maxLength)/2) + 20, (int(args.maxLength) - (int(int(args.maxLength)/2) + 25))]],
                 #[120,110],
                 #SEQUENCE_PRIMER_PAIR_OK_REGION_LIST
                 #SEQUENCE_EXCLUDED_REGION
@@ -169,6 +170,7 @@ class PrimerDesign(object):
                 'PRIMER_MIN_GC': int(args.primer_min_gc),
                 'PRIMER_MAX_GC': int(args.primer_max_gc),
                 'PRIMER_MAX_POLY_X': int(args.primer_max_poly_num),
+                #'PRIMER_PAIR_4_PRODUCT_TM_OLIGO_TM_DIFF':5,
                 'PRIMER_INTERNAL_MIN_TM':int(args.primer_min_tm) - 5,
                 'PRIMER_INTERNAL_OPT_TM':int(args.primer_opt_tm) - 5,
                 'PRIMER_INTERNAL_MAX_TM':int(args.primer_max_tm) - 5,
@@ -285,7 +287,7 @@ class Process(object):
 
         parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=desc)
         igroup = parser.add_mutually_exclusive_group(required=True)
-        igroup.add_argument('-i','--input',help="Input string for mutation primer design, (format:  genename:cds_location:length, separated by comma. For example:  TPP1:1417,CLN6:794:4,WAS:223:5).")
+        igroup.add_argument('-i','--input',help="Input string for mutation primer design, (format:  genename:cds_location:length, separated by comma. For example:  TPP1:1417:1,CLN6:794:4,WAS:223:5).")
         igroup.add_argument('-f','--file',help="Input file for mutation primer design, each line stands for one mutation.")
         igroup.add_argument('-p','--primerFile',action = "store_true", help="Amplicon sequence file for mutation primer design, ignore sequence extraction.")
         parser.add_argument('-g','--genome', required = True, help="Human genome sequence file (from NCBI)." )
