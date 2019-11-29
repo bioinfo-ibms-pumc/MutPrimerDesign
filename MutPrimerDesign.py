@@ -193,10 +193,10 @@ class PrimerDesign(object):
         gname = gid.split("|")[0]
         out = ""
         out1 = ""
-        print('PRIMER_LEFT_EXPLAIN:',primer['PRIMER_LEFT_EXPLAIN'])
-        print('PRIMER_RIGHT_EXPLAIN:',primer['PRIMER_RIGHT_EXPLAIN'])
-        print('PRIMER_INTERNAL_EXPLAIN:',primer['PRIMER_INTERNAL_EXPLAIN'])
-        print('PRIMER_PAIR_EXPLAIN:',primer['PRIMER_PAIR_EXPLAIN'])
+        print(gname,'PRIMER_LEFT_EXPLAIN:',primer['PRIMER_LEFT_EXPLAIN'])
+        print(gname,'PRIMER_RIGHT_EXPLAIN:',primer['PRIMER_RIGHT_EXPLAIN'])
+        print(gname,'PRIMER_INTERNAL_EXPLAIN:',primer['PRIMER_INTERNAL_EXPLAIN'])
+        print(gname,'PRIMER_PAIR_EXPLAIN:',primer['PRIMER_PAIR_EXPLAIN'])
         for i in range(primer['PRIMER_PAIR_NUM_RETURNED']):
             lpstart,lplen = primer[start[0] + "_" + str(i)]
             rpstart,rplen = primer[start[1] + "_" + str(i)]
@@ -287,11 +287,11 @@ class Process(object):
 
         parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=desc)
         igroup = parser.add_mutually_exclusive_group(required=True)
-        igroup.add_argument('-i','--input',help="Input string for mutation primer design, (format:  genename:cds_location:length, separated by comma. For example:  TPP1:1417:1,CLN6:794:4,WAS:223:5).")
+        igroup.add_argument('-i','--input',help="Input string for mutation primer design, (Format:  genename:cds_location:length, separated by comma. For example:  KRAS:34:2,MET:1124:1,EGFR:2573:1).")
         igroup.add_argument('-f','--file',help="Input file for mutation primer design, each line stands for one mutation.")
         igroup.add_argument('-p','--primerFile',action = "store_true", help="Amplicon sequence file for mutation primer design, ignore sequence extraction.")
-        parser.add_argument('-g','--genome', required = True, help="Human genome sequence file (from NCBI)." )
-        parser.add_argument('-G','--gffFile', required = True, help="Human genome annotation file (from NCBI)." )
+        parser.add_argument('-g','--genome', required = True, help="Human genome sequence file (From NCBI)." )
+        parser.add_argument('-G','--gffFile', required = True, help="Human genome annotation file (From NCBI)." )
         parser.add_argument('-k','--nameDB', required = True, help="Name convertion database file ." )
         parser.add_argument('-o','--outFile', required = True, help="Output file for amplicon sequences." )
         parser.add_argument("-m",'--maxLength', default = 400, help="Amplicon maximum length. (Default:400bp)")
@@ -349,7 +349,7 @@ class Process(object):
 
         genenames = []
         if args.input:
-            genenames = args.input.split(";")
+            genenames = args.input.split(",")
         elif args.file:
             with open(args.file,"r")as infile:
                 for i in infile:
