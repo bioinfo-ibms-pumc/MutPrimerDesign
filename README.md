@@ -35,7 +35,7 @@ optional arguments:
   -i INPUT, --input INPUT
                         Input string for mutation primer design, (format:
                         genename:cds_location:length, separated by comma. For
-                        example: TPP1:1417:1,CLN6:794:4,WAS:223:5).
+                        example: KRAS:34:2,MET:1124:1,EGFR:2573:1).
   -f FILE, --file FILE  Input file for mutation primer design, each line
                         stands for one mutation.
   -p, --primerFile      Amplicon sequence file for mutation primer design,
