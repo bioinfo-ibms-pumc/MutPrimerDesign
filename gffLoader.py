@@ -45,6 +45,9 @@ class GMRNA(GModel):
         self.gmodels[gmodel.type].append(gmodel)
 
     def constructCDSRegion(self):
+        self.starts = []
+        self.abstarts = []
+        self.lens = []
         if "CDS" in self.gmodels:
             cdss = self.gmodels["CDS"]
             start = 1
