@@ -160,7 +160,7 @@ class GffLoader(object):
                     genes[gene.id] = gene
                     #print(gene.id)
                     #yield gene
-                elif parts[2] == "mRNA":
+                elif parts[2] == "mRNA" or parts[2] == "transcript":
                     mrna = GMRNA(gchr,start,end,strand,parts[2],gparent,gid,gname)
                     mrnas[mrna.id] = mrna
                 elif parts[2] in GModel.GTYPE:
