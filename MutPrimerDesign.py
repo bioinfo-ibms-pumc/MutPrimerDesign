@@ -235,7 +235,7 @@ class PrimerDesign(object):
 
             iseqs = list("-"*len(input_seq))
             iseqs[:lpstart] = "." * lpstart
-            iseqs[rpstart:] = "." * (int(args.maxLength)-rpstart)
+            iseqs[rpstart:] = "." * (int(args.maxLength)-rpstart+1)
             iseqs[lpstart:lpstart+lplen] = ">" * lplen
             iseqs[rpstart-rplen:rpstart] = "<" * rplen
             iseqs[ipstart:ipstart+iplen] = "|" * iplen
