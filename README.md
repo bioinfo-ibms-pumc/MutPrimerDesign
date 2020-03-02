@@ -12,6 +12,9 @@ Human gene annotation file:
 wget -c ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.gff.gz
 gunzip -c GCF_000001405.39_GRCh38.p13_genomic.gff.gz > gene.gff
 
+Dependency package installation:
+pip3 install biopython pandas primer3-py
+
 ```
 ## Command Lines
 
