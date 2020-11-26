@@ -1,5 +1,6 @@
 # MutPrimerDesign: Primer design for human mutations
 
+DNA mutations located in the coding region of a gene are closely related to the function of the gene. When the mutation site of the human gene protein coding region is known, how to design primers on the genome to validate the mutation becomes an important issue. In this study, MutPrimerDesign was developed as a primer design program by using Python language. Through analyzing human genome sequence and gene annotation information, MutPrimerDesign converts the gene coding region coordinates into genomic coordinates and calls the Python package interface of Primer3, which can automatically complete the primer and probe sequence design for the gene mutation in batches. MutPrimerDesign is easy to use, can recognize gene names in various databases, and can modify the general parameters of primers, thus achieving rapid adjustment of primers.
 MutPrimerDesign is maintained by Yinghao Cao [yhcao@ibms.pumc.edu.cn].
 ## Download and Installation
 ```
