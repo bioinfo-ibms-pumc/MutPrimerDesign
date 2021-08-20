@@ -108,7 +108,7 @@ optional arguments:
 
 ```
 
-If you use SCSA for your research, please kindly cite the following paper:
+If you use MutPrimerDesign for your research, please kindly cite the following paper:
 
 CAO Yinghao,PENG Gongxin. MutPrimerDesign: Design primers for human gene mutations located in coding 
                           sequence region[J].Chinese Journal of Bioinformatics,2020,18(3):169-175.
