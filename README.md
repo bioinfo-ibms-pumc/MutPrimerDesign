@@ -110,5 +110,5 @@ optional arguments:
 
 If you use MutPrimerDesign for your research, please kindly cite the following paper:
 
-CAO Yinghao,PENG Gongxin. MutPrimerDesign: Design primers for human gene mutations located in coding 
-                          sequence region[J].Chinese Journal of Bioinformatics,2020,18(3):169-175.
+曹英豪,彭公信.MutPrimerDesign:用于人类基因编码区域突变位点的引物设计程序[J].生物信息学,2020,18(3):169-175.
+CAO Yinghao,PENG Gongxin.MutPrimerDesign: Design primers for human gene mutations located in coding sequence region[J].Chinese Journal of Bioinformatics,2020,18(3):169-175.
